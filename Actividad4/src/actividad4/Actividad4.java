@@ -1,5 +1,6 @@
 package actividad4;
 
+import static java.lang.Math.sqrt;
 import java.util.Scanner;
 
 public class Actividad4 {
@@ -88,18 +89,27 @@ public class Actividad4 {
                
                 case "cinco":
                     do {
-                        System.out.println("Error. Función aún no añadida...");
+                        Scanner potenciar = new Scanner(System.in);
+                        System.out.println("Ingrese un número: ");
+                        int a=potenciar.nextInt();
+                        int potenciacioncua = a * a;
+                        int potenciacioncub = a * a * a;
+                        System.out.println("La potenciación al cuadrado es: " + potenciacioncua);
+                        System.out.println("La potenciación al cubo es: " + potenciacioncub);
                         
                         System.out.println("Quiere repetir S/N: ");
                         String confirmacion = contenedorEntradas.nextLine();
                         if ("N".equals(confirmacion)) break;
-                        if ("n".equals(confirmacion)) break;
                     }while (true);
                 break;
                
                 case "seis":
                     do {
-                        System.out.println("Error. Función aún no añadida...");
+                        Scanner raiz = new Scanner(System.in);
+                        System.out.println("Ingrese un número: ");
+                        double a=raiz.nextDouble();
+                        double raizcuadrada = sqrt(a);
+                        System.out.printf("La raiz cuadrada es: %.2f%n", raizcuadrada);
                         
                         System.out.println("Quiere repetir S/N: ");
                         String confirmacion = contenedorEntradas.nextLine();
