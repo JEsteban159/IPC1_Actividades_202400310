@@ -20,29 +20,41 @@ public class Actividad4 {
             System.out.print("Seleccione una opcion (Escriba el número Ej. uno): ");
 
             String opcion = contenedorEntradas.nextLine();
-
+            
             switch (opcion) {
                 case "uno":
-                   System.out.println("Error. Función aún no añadida...");
-                    break;
+//                    do {
+                        Scanner sumar = new Scanner(System.in);
+                        System.out.println("Ingrese el primer número: ");
+                        int a=sumar.nextInt();
+                        System.out.println("Ingrese el segundo número: ");
+                        int b=sumar.nextInt();
+                        int suma = a + b;
+                        System.out.println("La suma es: " + suma);
+                    
+                        System.out.println("Quiere repetir S/N: ");
+                        String confirmacion = contenedorEntradas.nextLine();
+                        if ("N".equals(confirmacion)) break;
+//                    }while (true);
+                break;
                 case "dos":
                    System.out.println("Error. Función aún no añadida...");
-                    break;
+                break;
                 case "tres":
                    System.out.println("Error. Función aún no añadida...");
-                    break;
+                break;
                 case "cuatro":
                    System.out.println("Error. Función aún no añadida...");
-                    break;
+                break;
                 case "cinco":
                    System.out.println("Error. Función aún no añadida...");
-                    break;
+                break;
                 case "seis":
                    System.out.println("Error. Función aún no añadida...");
-                    break;    
+                break;    
                 case "siete":
                     salir = true;
-                    break;
+                break;
                 default:
                     System.out.println("Opcion invalida. Por favor escribir el número...");
             }
